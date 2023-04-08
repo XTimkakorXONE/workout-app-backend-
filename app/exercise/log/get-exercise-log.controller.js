@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import prisma from "../../prisma.js";
+import { prisma } from "../../prisma.js";
 import { addPrevValues } from "./add-prev-values.utils.js";
 
 export const getExerciseLog = asyncHandler(async (req, res) => {

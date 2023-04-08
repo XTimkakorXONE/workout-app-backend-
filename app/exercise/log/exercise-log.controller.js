@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import prisma from "../../prisma.js";
+import { prisma } from "../../prisma.js";
 
 export const createNewExerciseLog = asyncHandler(async (req, res) => {
   const exerciseId = +req.params.id;
